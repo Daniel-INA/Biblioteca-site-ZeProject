@@ -7,6 +7,7 @@ body {
     padding: 0;
     font-family: sans-serif;
     background-color: #141e30;
+    min-height: 100vh;
   }
   .cabecalho header .menu{
     padding: 1.5%;
@@ -37,3 +38,66 @@ body {
 .cabecalho header .menu a:hover{
     color: #594433;
 }
+.cabecalho header .menu #busca{
+    width: 15%;
+    line-height: 26px;
+    padding: 10px 20px;
+    height: 46px;
+    border-radius: 46px;
+    -webkit-border-radius: 46px;
+    -moz-border-radius: 46px;
+    padding-left: 46px;
+    font-size: 16px;
+    background-color: #f6f6f6;
+    cursor: pointer;
+}
+.cabecalho header .menu #Login{
+    background-color: blue;
+}
+
+.galeria-passaros {
+            padding: 40px;
+        }
+
+        .passaro-info{
+            height: 260px;
+            background-color: white;
+            margin-bottom: 200px;
+            transition: 0.2s ease-in-out;
+           
+        }
+        .passaro-info .img{
+            width: 240em;
+            border-radius: 7px;
+            align-content: center;
+        }
+
+        .passaro-info:hover {
+            transform: scale(1.25);
+            
+        }
+        
+        .galeria-passaros .link-passaro img {
+            width: 100px;
+            height: 200px;
+        }
+
+        .galeria-passaros img {
+            border-radius: 4px;
+        }
+
+        .galeria-passaros h3{
+            color: gray;
+            text-align: center;
+        }
+
+        .galeria-passaros a, .galeria-passaros a:hover{
+          text-decoration: none; /* Remover a underline de link */
+        }
+
+        @media(max-width: 768px) {
+            body {
+                padding: 0;
+            }
+        }
+       
