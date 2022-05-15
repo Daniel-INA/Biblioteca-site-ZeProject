@@ -50,10 +50,9 @@ body {
     font-size: 16px;
     background-color: #f6f6f6;
     cursor: pointer;
+    position: relative;
 }
-.cabecalho header .menu #Login{
-    background-color: blue;
-}
+
 
 .galeria-passaros {
             padding: 40px;
