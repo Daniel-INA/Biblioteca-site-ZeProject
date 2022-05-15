@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #141e30;
+  }
+  .cabecalho header .menu{
+    padding: 1.5%;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color:#243b55;
+    height: 8%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+.cabecalho header .menu{
+    text-decoration: none;
+    color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all ease .2s;
+}
+.cabecalho header .menu .logo{
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-right: 10%;
+    letter-spacing: 2px;
+}
+.cabecalho header .menu a:hover{
+    color: #594433;
+}
