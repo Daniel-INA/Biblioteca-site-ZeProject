@@ -9,6 +9,18 @@
     width: 190px;
     border-radius: 14px;
 }
+.imagem-aut{
+	position: absolute;
+	left:96%;
+	top:27%;
+	margin-left:-110px;
+	margin-top:-100px;
+}
+#IAU{
+	width: 100px;
+    border-radius: 20px;
+}
+
 *,*:before,*:after {
 	box-sizing: border-box;
 }
