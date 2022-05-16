@@ -38,8 +38,13 @@ body {
 .cabecalho header .menu a:hover{
     color: #594433;
 }
+
+#li-busca{
+    width: 30%;
+}
+
 .cabecalho header .menu #busca{
-    width: 15%;
+    /* width: 15%; */
     line-height: 26px;
     padding: 10px 20px;
     height: 46px;
@@ -56,6 +61,7 @@ body {
 
 .galeria-passaros {
             padding: 40px;
+            padding-top: 100px;
         }
 
         .passaro-info{
@@ -82,6 +88,8 @@ body {
         }
 
         .galeria-passaros img {
+            display: block;
+            margin: 0 auto;
             border-radius: 4px;
         }
 
@@ -98,5 +106,69 @@ body {
             body {
                 padding: 0;
             }
+        }
+        #menu-login {
+            display: none;
+            position: fixed;
+            background: hsl(212deg 40% 24% / 80%);
+            width: 230px;
+            height: 200px;
+            z-index: 9999;
+            padding: 15px 10px;
+            right: 0;
+        }
+
+        #li-login:hover #menu-login {
+            display: block;
+        }
+
+        #menu-login:hover {
+            display: block;
+        }
+
+        #menu-login input[type="text"],
+        #menu-login input[type="password"]{
+            width: 100%;
+        }
+        
+        #menu-login input[type="button"]{
+            width: 50%;
+        }
+
+        #menu-login input[type="password"]{
+            -webkit-text-security: disc;
+        }
+
+
+        li.right{
+            text-align: right;
+        }
+
+        .menu { 
+            width: 100%;
+            display: inline-block;
+            float: none;
+        }
+
+        #busca {
+            min-width: 60px;
+        }
+
+        #li-login{
+            text-align: right;
+        }
+
+        li.menu-direito{
+            width: 100%;
+        }
+
+        li.menu-direito ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            align-items: center;
+            display: flex;
+            justify-content: right;
         }
        

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/lgo.jpg">
+    <link rel="stylesheet" href="arquivosCss/telaPr.css">
+    <title>Tela principal</title>
+    <link rel="stylesheet" href="resources/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        #menu-login {
+            display: none;
+            position: fixed;
+            background: hsl(212deg 40% 24% / 80%);
+            width: 230px;
+            height: 200px;
+            z-index: 9999;
+            padding: 15px 10px;
+            right: 0;
+        }
+
+        #li-login:hover #menu-login {
+            display: block;
+        }
+
+        #menu-login:hover {
+            display: block;
+        }
+
+        #menu-login input[type="text"],
+        #menu-login input[type="password"]{
+            width: 100%;
+        }
+        
+        #menu-login input[type="button"]{
+            width: 50%;
+        }
+
+        #menu-login input[type="password"]{
+            -webkit-text-security: disc;
+        }
+
+
+        li.right{
+            text-align: right;
+        }
+
+        .menu { 
+            width: 100%;
+            display: inline-block;
+            float: none;
+        }
+
+        #busca {
+            min-width: 60px;
+        }
+
+        #li-login{
+            text-align: right;
+        }
+
+        li.menu-direito{
+            width: 100%;
+        }
+
+        li.menu-direito ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            align-items: center;
+            display: flex;
+            justify-content: right;
+        }
+    </style>
+</head>
+<body>
+    <div class = "cabecalho">
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li><a class="" href="index.html"><img class="logo" src="imagens/lgo.png" style="height: 40px;" /></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">classificações</a></li>
+                    <li><a href="#">biblioteca</a></li>
+                    <li><a href="#"><i class="iconfont icon-notice"></i><span>Notificações e anuncios</span></a></li>
+                    <li class="menu-direito">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="iconfont icon-library"> </i><span>favoritos</span> </a>
+                            </li>
+                            <li class="right" id="li-busca">
+                                <input id="busca" type="text" name="keyword" placeholder="Proucurar" class="form-control">
+                            </li>
+                            <li class="right" id="li-login">
+                                <a id="Login" href="teladeregistro.html">Entrar</a>
+                                <div id="menu-login">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p style="text-align: center">Fazer login</p>
+                                            <input type="text" placeholder="usuário">
+                                            <input type="password" placeholder="senha">
+                                            <input type="button" class="btn btn-primary" value="Login" style="margin: 0 auto;display: block;">
+                                            <p style="text-align: center"><a href="teladeregistro.html">Registrar-se</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="galeria-passaros">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="passaro-info">
+                    <a href="selecionado.html">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/71TNe9e4WiL.jpg" width=" 220px"  alt="Sangue dos elfos">
+                        <h3 class="nome-passaro">The Whitcher Livro 2</h3>
+                        <div class="descrição-passaro hidden">Geralt de Rívia é um bruxo sagaz e habilidoso. <br>
+                            Um assassino impiedoso e de sangue-frio treinado, desde a infância, para caçar e <br>
+                             eliminar monstros. Seu único objetivo: destruir as criaturas do mal que assolam o mundo.</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+</body>
+</html>
