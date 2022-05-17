@@ -1,95 +1,112 @@
-#menu-login {
-    display: none;
-    position: fixed;
-    background: hsl(212deg 40% 24% / 80%);
-    width: 230px;
-    height: 200px;
-    z-index: 9999;
-    padding: 15px 10px;
-    right: 0;
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%
 }
 
-#li-login:hover #menu-login {
-    display: block;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
 }
-
-#menu-login:hover {
-    display: block;
-}
-
-#menu-login input[type="text"],
-#menu-login input[type="password"]{
-    width: 100%;
-}
-
-#menu-login input[type="button"]{
-    width: 50%;
-}
-
-#menu-login input[type="password"]{
-    -webkit-text-security: disc;
-}
-
-
-li.right{
-    text-align: right;
-}
-
-.menu { 
-    width: 100%;
-    display: inline-block;
-    float: none;
-}
-
-#busca {
-    min-width: 60px;
-}
-
-#li-login{
-    text-align: right;
-}
-
-li.menu-direito{
-    width: 100%;
-}
-
-li.menu-direito ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
-    display: flex;
-    justify-content: right;
-}
-#details .details-body {
-    padding: 45px 0;
-    padding-bottom: 0;
-    background-color: rgba(51,51,51,0.05);
-}
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-element.style {
-    background-image: url(https://static.panda-novel.com/20213110/SupremeMagus_617e3b7b991dc.jpg);
-}
-#details .details-header .header-content .novel-cover i {
-    display: block;
-    height: 100%;
-    background-position: center top;
-    background-position-x: center;
-    background-position-y: top;
+.details-header{
+    height: 396px;
+    /* width: 100%; */
+    margin: 0 auto;
+    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+    /*
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    */
+    background-color: rgba(0,0,0,0.5);
+    padding: 28px 20px;
 }
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+.header-content {
+    background-color: 0(255, 0, 0, 0.737);
+    height: 100%;
 }
-#supreme{
-    background-image: url("https://static.panda-novel.com/20213110/SupremeMagus_617e3b7b991dc.jpg")
+
+
+.test-details{
+    width: 100%;
+}
+.autor-details{
+    background-color: 0;
+}
+.autor-details div{
+    display: flex;
+    flex-direction: row;
+}
+.autor-details div div{
+    padding-top: 7px;
+}
+.details-cover{
+    height: 100%;
+    width: 340px;
+    float: left;
+    margin-right: 20px;
+}
+.items-details{
+    height: 100%;
+}
+.details-cover img{
+    border-radius: 15px;
+}
+.tags-details{
+    background:0;
+}
+.desc-details{
+    background: 0;
+}
+.desc-details ul{
+    display: flex;
+    flex-direction: row;
+    list-style: circle;
+    gap: 30px;
+}
+.desc-details li div{
+    display: flex;
+    flex-direction: row;
+}
+
+.desc-details ul li div{
+    background-color: 0;
+}
+
+.desc-details ul li div div{
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+.button-details {
+    background-color:0;
+}
+.test1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.btn-btn-primary{
+    color: #fff;
+    background-color: #243b55;
+    border-color: #20c2b0;
+    padding: 0 40px;
+    line-height: 48px;
+    border-radius: 30px;
+    color: #333;
+    border-color: #f0f0f1;
+    min-width: 245px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    outline: 0;
+    outline-color: initial;
+    outline-style: initial;
+    outline-width: 0px;
+    
+    
 }
