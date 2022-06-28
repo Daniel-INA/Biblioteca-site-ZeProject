@@ -1,0 +1,21 @@
+.fit-cover {
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+.book-item:hover{
+    background-color: #212529;
+
+}
+
+.center-xs {
+    justify-content: center;
+    text-align: center;
+}
+.start-xs {
+    justify-content: flex-start;
+    text-align: start;
+}

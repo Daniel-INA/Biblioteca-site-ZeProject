@@ -1,0 +1,19 @@
+#alternative-title{
+    color: lightgray;
+}
+
+#myBtn{
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    text-decoration: underline;
+    background-color: transparent; /* Green */
+    border: none;
+    color: white;
+}
+
+
+
+@media (max-width: 575.98px) {
+    
+}
