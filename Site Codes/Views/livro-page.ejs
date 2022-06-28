@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<%- include('./partials/head') %>
+
+<body class="">
+  <%- include('./partials/header')  %> 
+
+  <main class="vw-100">
+    <!-- livros Page -->
+
+
+    <div class="w-75 mx-auto px-5">
+
+      <div class="row row-cols-sm-1 row-cols-md-2 justify-content-center py-5" style="z-index: 1;" style=" margin: 0;background-color: rgba(0,0,0,0.5)!important;">
+
+        <img class="d-inline-block" src="../images/capas/<%= livro.url %>.jpg" alt="<%= livro.nomeIngles %> Capa" style="max-width: 300px; height: 442.5px;">
+
+        <div class="d-inline-block" id="info-basica">
+          <h1 class="h2" id="livro-title"><%= livro.nome %> (<%= livro.lancamento %>)</h1>
+            <div class="my-3">
+
+            <p class="info-title">Sinopse:</p>
+            <div class="sinopse-content">
+              <p><%= livro.sinopse %></p>
+            </div>
+            <a href="/readpage" class="btn btn-primary">Ler</a>
+            <a href="<%= livro.buylink %>" class="btn btn-primary">Comprar</a>
+          </div>
+          </div>
+      </div>
+
+    
+  </main>
+
+  <%- include('./partials/footer') %>
+  <%- include('./partials/scripts') %> 
+</body>
+</html>

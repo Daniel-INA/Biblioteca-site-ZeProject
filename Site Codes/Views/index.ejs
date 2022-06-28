@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<%- include('./partials/head') %>
+
+<body>
+  <%- include('./partials/background') %> 
+  <%- include('./partials/header')  %> 
+
+  <main>
+    <div class="w-75 mx-auto px-5" id="content">
+      <div class="mx-auto justify-content-center row row-cols-1 row-cols-sm-2 row-cols-md-auto row-cols-lg-8 my-5" id="books">
+        <div class="container px-5">
+            <% if (livros.length === 0) { %>
+              <h2 class="display-4 my-5">Desculpe, nenhum livro encontrado</h2>
+            <% } else { %>
+              <% for(livro of livros) { %> 
+
+                <div class="col w-auto h-auto">
+                    <a class="text-decoration-none " href="/livro/<%= livro.url %> ">
+                      <div class="book-item row row-cols-sm-1 row-cols-md-2 my-3 p-3 justify-content-start w-75 h-60" style="z-index: 1;" style=" margin: 0;background-color: rgba(0,0,0,0.5)!important;">
+
+                        <img class="d-inline-block" src="../images/capas/<%= livro.url %>.jpg" alt="<%= livro.nome %> Capa" style="max-width: 300px; height: 442.5px;">
+                
+                        <div class="d-inline-block" id="info-basica">
+                          <h1 class="h2" id="livro-title"><%= livro.nome %></h1>
+                            <div class="my-3">
+                            <p class="info-title">Ano de Lançamento:</p>
+                            <p><%= livro.lancamento %></p>
+                
+                            <p class="info-title">Sinopse:</p>
+                            <div class="sinopse-content">
+                              <p><%= livro.sinopse %></p>
+                            </div>
+
+                          </div>
+                          </div>
+                      </div>
+                    </a>
+                </div> 
+
+              <% } %>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <%- include('./partials/footer') %> 
+  <%- include('./partials/scripts') %> 
+</body>
+</html>
